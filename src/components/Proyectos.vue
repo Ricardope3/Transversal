@@ -1,7 +1,6 @@
 <template>
-  <div class="home">
-    <h1>Hola</h1>
-
+  <div class="Proyectos">
+    <h1>Proyectos</h1>
   </div>
 </template>
 
