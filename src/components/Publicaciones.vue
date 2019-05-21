@@ -4,19 +4,18 @@
     <v-container fluid class="grey lighten-4">
       <p class="font-weight-regular display-3 text-xs-center">Publicaciones</p>
       <!-- LAYOUT DE TODO LA ROW DE TODOS LOS LIBROS -->
-      <v-layout row justify-start pa-2 wrap class="ma-1">
+      <v-layout row justify-space-around pa-2 wrap class="ma-1">
         <v-flex wrap xs12 sm6  lg4  v-for="index in cuantosLibrosToDisplay()" :key="index">
           <v-card flat dark color="transparent">
             <!-- LAYOUT DE UN SOLO LIBRO -->
             <v-layout py-2 >
               <!-- FLEX DE LA IMAGEN -->
-              <v-flex xs5 sm6 md4 lg4 class=" offset-lg-12 ">
+              <v-flex xs5 sm6 md4 lg4 mx-2>
                 <v-img
                   contain
                   position="left"
                   height="220"
-                  width="130"
-                  alt
+                  width="170" 
                   :src="libros[index-1].imagen"
                 ></v-img>
               </v-flex>
