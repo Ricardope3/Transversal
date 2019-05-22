@@ -1,11 +1,11 @@
 <template>
   <div class="m">
     <Publicaciones></Publicaciones>
-    <v-divider></v-divider>
+    <v-divider color="primary"></v-divider>
     <Eventos></Eventos>
-    <v-divider></v-divider>
+    <v-divider color="primary"></v-divider>
     <Blogs></Blogs>
-    <v-divider></v-divider>
+    <v-divider color="primary"></v-divider>
   </div>
 </template>
 

@@ -1,12 +1,12 @@
 <template>
-  <v-toolbar  height="85" dark color="primary" app >
+  <v-toolbar  height="98" dark color="secondary" app >
     <v-toolbar-items>
-      <v-btn  flat round router :to = '"/"'>
+      <v-btn  flat round small router :to = '"/"'>
         <img src="../assets/toolbar_logo.png" height="52" width="166">
       </v-btn>
       <v-menu offset-y>
         <template v-slot:activator="{ on }">
-          <v-btn round  class="ma-2" flat v-on="on">Sobre Nosotros</v-btn>
+          <v-btn round  class="primary--text ma-2" flat v-on="on">Sobre Nosotros</v-btn>
         </template>
         <v-list>
           <v-list-tile v-for="(item, index) in dropDownItems" :key="index" router :to="item.route">
@@ -14,7 +14,7 @@
           </v-list-tile>
         </v-list>
       </v-menu>
-      <v-btn flat round class=" hidden-sm-and-down ma-2" v-for="item in toolbarButtons" :key="item.text" router :to="item.route">
+      <v-btn flat round class="primary--text hidden-sm-and-down ma-2" v-for="item in toolbarButtons" :key="item.text" router :to="item.route">
         <span>{{item.text}}</span>
       </v-btn>
     </v-toolbar-items>

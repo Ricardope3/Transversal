@@ -1,27 +1,27 @@
 <template>
   <div class="publicaciones">
     <!-- CONTENEDOR DE TODO -->
-    <v-container fluid class="grey lighten-4">
-      <p class="font-weight-regular display-3 text-xs-center">Publicaciones</p>
+    <v-container fluid class="grey lighten-4" grid-list-lg >
+      <p class="font-weight-regular display-3 text-xs-center primary--text text--darken-1">Publicaciones</p>
       <!-- LAYOUT DE TODO LA ROW DE TODOS LOS LIBROS -->
       <v-layout row justify-space-around pa-2 wrap class="ma-1">
         <v-flex wrap xs12 sm6  lg4  v-for="index in cuantosLibrosToDisplay()" :key="index">
-          <v-card flat dark color="transparent">
+          <v-card dark color="transparent" hover raised>
             <!-- LAYOUT DE UN SOLO LIBRO -->
-            <v-layout py-2 >
+            <v-layout py-2  >
               <!-- FLEX DE LA IMAGEN -->
               <v-flex xs5 sm6 md4 lg4 mx-2>
                 <v-img
                   contain
                   position="left"
                   height="220"
-                  width="170" 
+                  width="150" 
                   :src="libros[index-1].imagen"
                 ></v-img>
               </v-flex>
               <!-- FLEX DE LA DESCRIPCION DE LA IMAGEN -->
-              <v-flex sx4 sm8 md6 lg6 wrap>
-                <div dark class="black--text">
+              <v-flex sx4 sm8 md6 lg7 wrap >
+                <div dark class="black--text ">
                   <div
                     class="title font-weight-regular px-3 pt-3 pb-1 text-xs-left "
                   >{{libros[index-1].titulo}}</div>
@@ -45,6 +45,7 @@
 export default {
   data() {
     return {
+      imagen1: require('../assets/logo1.jpg'),
       libros: [
         {
           titulo: "Steering the metropolis",
