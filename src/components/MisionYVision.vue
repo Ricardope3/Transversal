@@ -1,28 +1,28 @@
 <template>
   <div class="m">
-    <v-container grid-list-xl grey lighten-4>
+    <v-container grid-list-xl grey lighten-4 style="width:950px">
       <p
         class="font-weight-regular display-3 text-xs-center primary--text text--darken-1"
       >Sobre Nosotros</p>
       <v-layout v-for="item in sobreNosotros" :key="item.titulo" wrap>
-        <v-flex xs12>
+        <v-flex xs12 >
           <div class="display-1 font-weight-light">{{item.titulo}}</div>
         </v-flex>
         <v-flex xs12>
-          <v-card tile flat class="secondary" dark>
+          <v-card  class="transparent" flat >
             <v-card-text>
               <div class="texto subheading font-weight-regular">{{item.texto}}</div>
             </v-card-text>
           </v-card>
         </v-flex>
       </v-layout>
-      <v-divider color="primary"></v-divider>
-      <v-layout wrap>
+      <v-divider color="primary" ></v-divider>
+      <v-layout wrap pt-5>
         <v-flex xs12 sm6  v-for="item in misionVision" :key="item.titulo">
           <p
             class="font-weight-regular display-3 text-xs-center primary--text text--darken-1"
           >{{item.titulo}}</p>
-          <v-card tile flat class="secondary" dark>
+          <v-card flat class="transparent ">
             <v-card-text>
               <div class="texto subheading font-weight-regular">{{item.texto}}</div>
             </v-card-text>
@@ -30,12 +30,12 @@
         </v-flex>
       </v-layout>
       <v-divider color="primary"></v-divider>
-      <v-layout>
+      <v-layout pt-5>
         <v-flex xs12>
           <p
             class="font-weight-regular display-3 text-xs-center primary--text text--darken-1"
           >Valores</p>
-          <v-card tile flat class="secondary" dark>
+          <v-card  flat class="transparent">
             <v-card-text>
               <div
                 class="texto subheading font-weight-regular"

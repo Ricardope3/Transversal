@@ -1,6 +1,7 @@
 <template>
   <div class="publicaciones">
     <!-- CONTENEDOR DE TODO -->
+    
     <v-container fluid class="grey lighten-4" grid-list-lg >
       <p class="font-weight-regular display-3 text-xs-center primary--text text--darken-1">Publicaciones</p>
       <!-- LAYOUT DE TODO LA ROW DE TODOS LOS LIBROS -->

@@ -1,23 +1,22 @@
 <template>
-  <div  class="m">
-    <v-container  grid-list-xl grey lighten-4>
+  <div class="m">
+    <v-container grid-list-xl grey lighten-4 style="width :950px;">
       <p
         class="font-weight-regular display-3 text-xs-center primary--text text--darken-1"
       >Think Tanks</p>
       <v-layout v-for="item in thinkTanks" :key="item.titulo" wrap>
-        <v-flex xs12 >
+        <v-flex xs12>
           <div class="display-1 font-weight-light">{{item.titulo}}</div>
         </v-flex>
         <v-flex xs12>
-          <v-card tile flat class="secondary" dark>
-            <v-card-text>
-              <div class="texto subheading font-weight-regular">{{item.texto}}</div>
+          <v-card flat class="transparent">
+            <v-card-text class="text">
+              <div class="espacio title font-weight-light">{{item.texto}}</div>
             </v-card-text>
           </v-card>
         </v-flex>
       </v-layout>
       <v-divider color="primary"></v-divider>
-      
     </v-container>
   </div>
 </template>
@@ -55,3 +54,12 @@ export default {
 };
 </script>
     
+
+<style scoped>
+
+.text{
+  line-height: 10px;
+}
+</style>
+    
+

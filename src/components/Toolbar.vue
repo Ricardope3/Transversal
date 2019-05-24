@@ -1,8 +1,8 @@
 <template>
   <v-toolbar  height="98" dark color="secondary" app >
     <v-toolbar-items>
-      <v-btn  flat round small router :to = '"/"'>
-        <img src="../assets/toolbar_logo.png" height="52" width="166">
+      <v-btn round  class="grey darken-1"  small router :to = '"/"'>
+        <img src="../assets/profile.png" height="70" width="79">
       </v-btn>
       <v-menu offset-y>
         <template v-slot:activator="{ on }">
