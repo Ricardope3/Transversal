@@ -2,7 +2,7 @@
   <v-toolbar  height="98" dark color="secondary" app >
     <v-toolbar-items>
       <v-btn round  class="grey darken-1"  small router :to = '"/"'>
-        <img src="../assets/profile.png" height="70" width="79">
+        <img src="../assets/logo.png" height="60" width="190">
       </v-btn>
       <v-menu offset-y>
         <template v-slot:activator="{ on }">

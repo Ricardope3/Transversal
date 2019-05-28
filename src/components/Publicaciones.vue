@@ -46,7 +46,7 @@
 export default {
   data : () =>({
     
-      imagen1: require('../assets/logo1.jpg'),
+      
       libros: [
         {
           titulo: "Steering the metropolis",

@@ -40,7 +40,7 @@
 <script>
 export default {
  
-  imagen1: require("../assets/logo1.jpg"),
+ 
   data: () => ({
     
     eventos: [

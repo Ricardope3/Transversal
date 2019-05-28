@@ -11,6 +11,8 @@
   "dependencies": {
     "core-js": "^2.6.5",
     "express": "^4.17.1",
+    "path": "^0.12.7",
+    "serve-static": "^1.14.1",
     "vue": "^2.6.10",
     "vue-router": "^3.0.3",
     "vue-tweet-embed": "^2.3.0",
