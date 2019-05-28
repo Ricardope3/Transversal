@@ -10,8 +10,8 @@
         </v-flex>
         <v-flex xs12>
           <v-card flat class="transparent">
-            <v-card-text class="text">
-              <div class="espacio title font-weight-light">{{item.texto}}</div>
+            <v-card-text>
+              <p class="espacio    font-weight-light">{{item.texto}}</p>
             </v-card-text>
           </v-card>
         </v-flex>
@@ -56,9 +56,9 @@ export default {
     
 
 <style scoped>
-
-.text{
-  line-height: 10px;
+.p {
+  line-height: 100px !important;
+  background-color: aquamarine !important;
 }
 </style>
     

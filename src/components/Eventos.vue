@@ -39,9 +39,10 @@
 
 <script>
 export default {
-  iniciar: 0,
+ 
   imagen1: require("../assets/logo1.jpg"),
   data: () => ({
+    
     eventos: [
       {
         titulo: "Semana de la Evidencia",

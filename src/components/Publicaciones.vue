@@ -44,8 +44,8 @@
 
 <script>
 export default {
-  data() {
-    return {
+  data : () =>({
+    
       imagen1: require('../assets/logo1.jpg'),
       libros: [
         {
@@ -81,8 +81,7 @@ export default {
           imagen: "https://pictures.abebooks.com/isbn/9780006336426-us.jpg"
         }
       ]
-    };
-  },
+  }),
   methods: {
     cuantosLibrosToDisplay: function() {
       if (window.location.pathname === "/") {
